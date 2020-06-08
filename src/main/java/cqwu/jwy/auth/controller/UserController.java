@@ -20,6 +20,12 @@ public class UserController {
         this.userService = userService;
     }
 
+    /**
+     * 创建用户
+     *
+     * @param user 用户对象
+     * @return ok
+     */
     @ApiOperation(value = "创建用户")
     @ApiImplicitParam(name = "user", value = "用户数据", required = true, paramType = "body", dataType = "User")
     @PostMapping("add")
