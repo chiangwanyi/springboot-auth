@@ -8,7 +8,7 @@ spring:
   # 数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/auth_user?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/auth_user?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
@@ -18,7 +18,7 @@ spring:
 # mybatis-plus 配置
 mybatis-plus:
   # xml扫描，多个目录用逗号或者分号分隔（告诉 Mapper 所对应的 XML 文件位置）
-#  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:mapper/*.xml
   # 以下配置均有默认值,可以不设置
   global-config:
     db-config:
